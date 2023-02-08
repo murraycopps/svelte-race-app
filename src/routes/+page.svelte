@@ -94,4 +94,30 @@
 		border-radius: 10rem;
 		margin: 2rem 0 0;
 	}
+	@media (max-width: 600px) {
+		h1 {
+			font-size: 4rem;
+		}
+		p {
+			font-size: 1.5rem;
+		}
+		a {
+			font-size: 1.5rem;
+			padding: 0.5rem 3rem;
+		}
+	}
+
+	/* larger breakpoint */
+	@media (max-width: 900px) {
+		h1 {
+			font-size: 6rem;
+		}
+		p {
+			font-size: 2rem;
+		}
+		a {
+			font-size: 2rem;
+			padding: 0.5rem 5rem;
+		}
+	}
 </style>

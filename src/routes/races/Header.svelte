@@ -42,6 +42,13 @@
 	@media (max-width: 600px) {
 		nav {
 			--slant-amount: 1.5rem;
+			flex: 0.8;
+		}
+	}
+	@media (max-width: 900px) {
+		nav {
+			--slant-amount: 2rem;
+			flex: 0.6;
 		}
 	}
 	

@@ -43,14 +43,20 @@
 		justify-content: center;
 		align-items: center;
 		gap: 2rem;
+        text-align: center;
 	}
 
 	ul {
 		list-style: none;
 		padding: 0;
         margin: 0;
-        text-align: center;
         font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
 	}
 
 	p {
@@ -61,13 +67,13 @@
 		font-size: 4rem;
 		font-weight: 400;
 		margin: 0;
-		text-align: center;
 	}
 
 	h2 {
 		font-size: 2.5rem;
 		font-weight: 400;
 		margin: 0;
+        margin-bottom: 2rem;
 	}
 	.details {
 		--slant-amount: 2.5rem;
@@ -85,11 +91,31 @@
 		);
 		color: var(--off-white);
         font-size: 1.5rem;
+        flex-wrap: wrap;
+        gap: .5rem;
 	}
 
 	.description {
-		text-align: center;
         margin-bottom: 1rem;
         font-size: 1.125rem;
 	}
+    /* breakpoint */
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 3rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        .details {
+            --slant-amount: 1.5rem;
+            font-size: 1.25rem;
+        }
+        .description {
+            font-size: 1rem;
+        }
+        ul{
+            flex-direction: column;
+        }
+    }
 </style>
