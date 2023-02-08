@@ -9,51 +9,87 @@
 </script>
 
 <section>
-	<div>
-		<h1>{data.props.race.name}</h1>
-		{#if data.props.race.distance.includes('track')}
+	<h1>{data.props.race.name}</h1>
+	<div class="details">
+		{#if !data.props.race.distance.toLowerCase().includes('track')}
 			<p>{data.props.race.distance}</p>
-		{:else if data.props.race.distances}
-        <h2>Distances</h2>
-			<ul>
-                {#each data.props.race.distances as distance}
-				<li>
-					<p>{distance}</p>
-				</li>
-			{/each}
-            </ul>
+		{:else}
+			<p>Track Meet</p>
 		{/if}
 
 		<p>{data.props.race.location}</p>
+		<p>{data.props.race.date}</p>
 	</div>
+
+	<p class="description">{data.props.race.description}</p>
+	{#if data.props.race.distances}
+		<div class="distances">
+			<h2>Distances</h2>
+			<ul>
+				{#each data.props.race.distances as distance}
+					<li>
+						<p>{distance}</p>
+					</li>
+				{/each}
+			</ul>
+		</div>
+	{/if}
 </section>
 
 <style>
-    section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
 
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    li {
-        margin: 1rem 0;
-    }
-
-    a {
-        color: #1f2937;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    h1 {
-        font-size: 4rem;
-        font-weight: 400;
+	ul {
+		list-style: none;
+		padding: 0;
         margin: 0;
-    }
+        text-align: center;
+        font-size: 1.5rem;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 4rem;
+		font-weight: 400;
+		margin: 0;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+		font-weight: 400;
+		margin: 0;
+	}
+	.details {
+		--slant-amount: 2.5rem;
+		background-color: var(--bright-orange);
+		padding: 1rem var(--slant-amount);
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+		clip-path: polygon(
+			var(--slant-amount) 0%,
+			100% 0%,
+			calc(100% - var(--slant-amount)) 100%,
+			0% 100%
+		);
+		color: var(--off-white);
+        font-size: 1.5rem;
+	}
+
+	.description {
+		text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.125rem;
+	}
 </style>

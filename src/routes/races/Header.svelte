@@ -18,19 +18,33 @@
 	}
 
 	nav {
+		--slant-amount: 3rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: center;
 		flex: 0.4;
-		padding: 1rem;
+		padding: 1rem 2rem;
 		background: var(--bright-orange);
-		clip-path: polygon(0 0, 100% 0, 92.5% 100%, 7.5% 100%);
+		clip-path: polygon(0 0, 100% 0, calc(100% - var(--slant-amount)) 100%, var(--slant-amount) 100%);
 	}
 
 	nav a {
-		color: white;
+		color: var(--off-white);
 		text-decoration: none;
 	}
+
+	nav a:hover {
+		color: var(--off-white);
+		text-decoration: underline;
+	}
+
+	@media (max-width: 600px) {
+		nav {
+			--slant-amount: 1.5rem;
+		}
+	}
+	
+
 
 </style>

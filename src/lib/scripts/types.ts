@@ -4,6 +4,7 @@ type race = {
     distance: string;
     date: string;
     location: string;
+    description: string;
     distances?: string[];
 };
 
