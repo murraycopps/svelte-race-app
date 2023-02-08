@@ -1,4 +1,5 @@
 <script>
+	import LandingImg from '$lib/images/landing.jpg';
 	
 </script>
 
@@ -8,38 +9,31 @@
 </svelte:head>
 
 <section>
-	<h1>Welcome to the SvelteKit demo app</h1>
-	<div class="welcome">
-	</div>
+	<!-- generate a landing page for a race finder website -->
+
+	<span class="image">
+		<picture>
+			<source srcset={LandingImg} type="image/jpg" />
+			<!-- svelte-ignore a11y-img-redundant-alt -->
+			<img src={LandingImg} alt="Landing image" width="100%" />
+		</picture>
+	</span>
+	<h1> 
+		Race Finder
+	</h1>
+	<p>
+		
+	</p>
+
 	
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
+	.image{
+		position: fixed;
+		z-index: -1;
+		inset: 0;
+		overflow: hidden;
 	}
 
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
 </style>
