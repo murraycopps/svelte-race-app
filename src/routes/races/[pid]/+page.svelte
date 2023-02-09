@@ -19,6 +19,7 @@
 
 		<p>{data.props.race.location}</p>
 		<p>{data.props.race.date}</p>
+        <p>{data.props.race.distanceAway} {data.props.race.distanceAway === 1 ? "Mile" : "Miles"} Away</p>
 	</div>
 
 	<p class="description">{data.props.race.description}</p>

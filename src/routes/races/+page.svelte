@@ -9,7 +9,7 @@
 
 	const setState = (value: boolean) => {
 		state = value;
-        sortDistances();
+		sortDistances();
 	};
 
 	const sortDistances = () => {
@@ -42,9 +42,15 @@
 					!race.distance.toLowerCase().includes('half')
 			);
 		} else {
-			selectedRaces = races.filter((race) =>
-				race.distance.toLowerCase().includes(e.currentTarget.value)
-			);
+			selectedRaces = races.filter((race) => {
+				let found;
+				race.distances?.forEach((distance) => {
+					if (distance.includes(e.currentTarget.value)) {
+						found = true;
+					}
+				});
+				return race.distance.toLowerCase().includes(e.currentTarget.value) || found;
+			});
 		}
 		sortDistances();
 	};
