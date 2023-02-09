@@ -89,13 +89,17 @@
 		font-weight: 400;
 		color: var(--off-white);
 		text-decoration: none;
-		background-color: #3b82f6;
+		/* background-color: #3b82f6; */
+		/* background: -webkit-linear-gradient(180deg, #cc2b5e, #ab26d7); */
+		background-color: var(--bright-orange);
 		padding: 0.5rem 5rem;
 		border-radius: 10rem;
 		margin: 2rem 0 0;
 	}
 	a:hover {
-		background-color: #2563eb;
+		/* background-color: #2563eb; */
+		/* bright orange is #f65900  make it a little darker then that to show that it is hovered */
+		background-color: #ce4800;
 	}
 	@media (max-width: 600px) {
 		h1 {

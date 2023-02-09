@@ -9,6 +9,7 @@
 
 	const setState = (value: boolean) => {
 		state = value;
+        sortDistances();
 	};
 
 	const sortDistances = () => {
