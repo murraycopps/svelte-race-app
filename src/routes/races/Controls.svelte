@@ -73,7 +73,7 @@
 
 <style>
 	section {
-		--controls-color: var(--bright-orange);
+		--controls-color: var(--dark-blue);
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem;
