@@ -12,14 +12,14 @@
 
 <style>
 	button {
+		color: var(--controls-color);
 		width: 100%;
 		height: 4rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		background-color: white;
-		color: black;
+		background-color: var(--off-white);
 		border: 4px solid var(--controls-color);
 		border-radius: 3rem;
 		position: relative;
