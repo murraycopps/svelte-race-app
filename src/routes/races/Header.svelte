@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <header>
 	<nav>
 		<a href="/">Home</a>

@@ -1,4 +1,4 @@
-<script>
+<scrip lang="ts">
 	import LandingImg from '$lib/images/landing.jpg';
 </script>
 
