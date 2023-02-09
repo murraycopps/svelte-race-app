@@ -74,6 +74,7 @@
 		background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 25%, rgba(252,176,69,1) 50%, rgba(253,29,29,1) 75%, rgba(131,58,180,1) 100%);
 		background: linear-gradient(90deg, rgba(222,18,236,1) 0%, rgba(253,29,29,1) 25%, rgba(252,176,69,1) 50%, rgba(253,29,29,1) 75%, rgba(222,18,236,1) 100%);
 		background: linear-gradient(90deg, rgba(222,18,236,1) 0%, rgba(253,29,29,1) 25%, rgba(252,125,55,1) 50%, rgba(253,29,29,1) 75%, rgba(222,18,236,1) 100%);
+		background: linear-gradient(90deg, rgba(222,18,236,1) 0%, rgba(253,29,29,1) 20%, rgba(252,125,55,1) 40%, rgba(253,29,29,1) 60%, rgba(222,18,236,1) 80%, rgba(253,29,29,1) 100%);
 		/* do the same thing but a circle */
 		/* background: -webkit-radial-gradient(#cc2b5e, #ab26d7); */
 		/* background: -webkit-radial-gradient(#ab26d7, #cc2b5e); */
@@ -81,8 +82,8 @@
 		-webkit-background-clip: text;
 		color: transparent;
 
-		background-size: 400% 100%;
-		animation: gradient 10s ease infinite;
+		background-size: 500% 100%;
+		animation: gradient 10s linear infinite;
 	}
 
 	p {
@@ -99,12 +100,13 @@
 		background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 25%, rgba(252,176,69,1) 50%, rgba(253,29,29,1) 75%, rgba(131,58,180,1) 100%);
 		background: linear-gradient(90deg, rgba(222,18,236,1) 0%, rgba(253,29,29,1) 25%, rgba(252,176,69,1) 50%, rgba(253,29,29,1) 75%, rgba(222,18,236,1) 100%);
 		background: linear-gradient(90deg, rgba(222,18,236,1) 0%, rgba(253,29,29,1) 25%, rgba(252,125,55,1) 50%, rgba(253,29,29,1) 75%, rgba(222,18,236,1) 100%);
+		background: linear-gradient(90deg, rgba(222,18,236,1) 0%, rgba(253,29,29,1) 20%, rgba(252,125,55,1) 40%, rgba(253,29,29,1) 60%, rgba(222,18,236,1) 80%, rgba(253,29,29,1) 100%);
 		/*background-color: var(--bright-orange);*/
 		padding: 0.5rem 5rem;
 		border-radius: 10rem;
 		margin: 2rem 0 0;
-		background-size: 400% 400%;
-		 animation: gradient 10s ease infinite;
+		background-size: 500% 100%;
+		 animation: gradient 10s linear infinite;
 	}
 	a:hover {
 		 /*background-color: #2563eb;*/
@@ -145,11 +147,8 @@
 		0% {
 			background-position: 0% 50%;
 		}
-		50% {
-			background-position: 100% 50%;
-		}
 		100% {
-			background-position: 0% 50%;
+			background-position: 100% 50%;
 		}
 	}
 
