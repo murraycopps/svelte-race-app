@@ -57,7 +57,7 @@
 	};
 </script>
 
-<div class="display">
+<section>
 	<select on:change={(e) => changeDistance(e)}>
 		<option value="all">All</option>
 		<option value="5k">5k</option>
@@ -69,9 +69,21 @@
 	<div>
 		<Switch {state} {setState} left="Date" right="Distance" />
 	</div>
-</div>
+</section>
 
 <style>
+	section {
+		--controls-color: var(--bright-orange);
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+		align-items: center;
+		width: clamp(500px, 50%, 800px);
+		max-width: 100%;
+	}
+	section * {
+		flex: 1;
+	}
 	select {
 		height: 4rem;
 		padding: 1rem;
@@ -86,18 +98,5 @@
 
 	option {
 		padding: 0.5rem;
-	}
-
-	.display {
-		--controls-color: var(--bright-orange);
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 1rem;
-		align-items: center;
-		width: clamp(500px, 50%, 800px);
-		max-width: 100%;
-	}
-	.display * {
-		flex: 1;
 	}
 </style>

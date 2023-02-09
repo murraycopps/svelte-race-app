@@ -5,13 +5,13 @@
 	export let setState: (state: boolean) => void;
 </script>
 
-<button class={`switch ${state ? 'left' : 'right'}`} on:click={() => setState(!state)}>
+<button class={`${state && 'left'}`} on:click={() => setState(!state)}>
 	{state ? left : right}
-	<span class="switch-item" />
+	<span />
 </button>
 
 <style>
-	.switch {
+	button {
 		width: 100%;
 		height: 4rem;
 		display: flex;
@@ -25,14 +25,14 @@
 		position: relative;
 		user-select: none;
 		padding: 0.25rem;
-        font-size: 2rem;
+		font-size: 2rem;
 	}
 
-	.switch.left {
+	.left {
 		flex-direction: row-reverse;
 	}
 
-	.switch-item {
+	span {
 		height: 3.375rem;
 		aspect-ratio: 1/1;
 		display: flex;
