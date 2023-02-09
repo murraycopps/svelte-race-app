@@ -76,10 +76,12 @@
 		height: 4rem;
 		padding: 1rem;
 		border-radius: 4rem;
-		background-color: var(--dark);
+		border: 0;
+		background-color: var(--controls-color);
 		font-size: 1.5rem;
 		color: var(--off-white);
 		width: 100%;
+		outline: none;
 	}
 
 	option {
@@ -87,6 +89,7 @@
 	}
 
 	.display {
+		--controls-color: var(--bright-orange);
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem;

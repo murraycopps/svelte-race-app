@@ -20,11 +20,11 @@
 		align-items: center;
 		background-color: white;
 		color: black;
-		border: 4px solid var(--dark);
+		border: 4px solid var(--controls-color);
 		border-radius: 3rem;
 		position: relative;
 		user-select: none;
-		padding: 0.5rem;
+		padding: 0.25rem;
         font-size: 2rem;
 	}
 
@@ -33,10 +33,10 @@
 	}
 
 	.switch-item {
-		height: 3rem;
+		height: 3.375rem;
 		aspect-ratio: 1/1;
 		display: flex;
-		background-color: var(--dark);
+		background-color: var(--controls-color);
 		border-radius: 50vh;
 		outline: none;
 		box-sizing: border-box;
