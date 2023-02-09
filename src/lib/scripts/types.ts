@@ -6,6 +6,7 @@ type Race = {
     location: string;
     description: string;
     distances?: string[];
+    distanceAway: number;
 };
 
 export type { Race }

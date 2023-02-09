@@ -16,10 +16,16 @@
 			<p>{race.location}</p>
 			<p>{race.date}</p>
 		</span>
+        <p class="distance-away">{race.distanceAway} {race.distanceAway === 1 ? "Mile" : "Miles"} Away</p>
 	</a>
 </li>
 
 <style>
+    h2{
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
 	p {
 		margin: 0;
 	}
@@ -57,4 +63,9 @@
 		color: var(--off-white);
 		flex-wrap: wrap;
 	}
+    .distance-away {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
 </style>
