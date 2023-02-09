@@ -94,6 +94,9 @@
 		border-radius: 10rem;
 		margin: 2rem 0 0;
 	}
+	a:hover {
+		background-color: #2563eb;
+	}
 	@media (max-width: 600px) {
 		h1 {
 			font-size: 4rem;

@@ -1,4 +1,4 @@
-type race = {
+type Race = {
     id: string;
     name: string;
     distance: string;
@@ -8,4 +8,4 @@ type race = {
     distances?: string[];
 };
 
-export type { race }
+export type { Race }

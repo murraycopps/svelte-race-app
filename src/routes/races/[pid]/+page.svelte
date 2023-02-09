@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { race } from '$lib/scripts/types';
+	import type { Race } from '$lib/scripts/types';
 
 	export let data: {
 		props: {
-			race: race;
+			race: Race;
 		};
 	};
 </script>
