@@ -70,13 +70,19 @@
 		gap: 1rem;
 		text-align: center;
 		/* background: -webkit-radial-gradient( #FFFF00, #FF3B00); */
-		background: -webkit-linear-gradient(180deg, #cc2b5e, #ab26d7);
+		background: linear-gradient(90deg, rgba(204,43,94,1) 0%, rgba(171,38,215,1) 25%, rgba(204,43,94,1) 50%, rgba(171,38,215,1) 75%, rgba(204,43,94,1) 100%);
+		background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 25%, rgba(252,176,69,1) 50%, rgba(253,29,29,1) 75%, rgba(131,58,180,1) 100%);
+		background: linear-gradient(90deg, rgba(222,18,236,1) 0%, rgba(253,29,29,1) 25%, rgba(252,176,69,1) 50%, rgba(253,29,29,1) 75%, rgba(222,18,236,1) 100%);
+		background: linear-gradient(90deg, rgba(222,18,236,1) 0%, rgba(253,29,29,1) 25%, rgba(252,125,55,1) 50%, rgba(253,29,29,1) 75%, rgba(222,18,236,1) 100%);
 		/* do the same thing but a circle */
 		/* background: -webkit-radial-gradient(#cc2b5e, #ab26d7); */
 		/* background: -webkit-radial-gradient(#ab26d7, #cc2b5e); */
 		background-clip: text;
 		-webkit-background-clip: text;
 		color: transparent;
+
+		background-size: 400% 100%;
+		animation: gradient 10s ease infinite;
 	}
 
 	p {
@@ -89,17 +95,24 @@
 		font-weight: 400;
 		color: var(--off-white);
 		text-decoration: none;
-		/* background-color: #3b82f6; */
-		/* background: -webkit-linear-gradient(180deg, #cc2b5e, #ab26d7); */
-		background-color: var(--bright-orange);
+		 /*background-color: #3b82f6;*/
+		background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 25%, rgba(252,176,69,1) 50%, rgba(253,29,29,1) 75%, rgba(131,58,180,1) 100%);
+		background: linear-gradient(90deg, rgba(222,18,236,1) 0%, rgba(253,29,29,1) 25%, rgba(252,176,69,1) 50%, rgba(253,29,29,1) 75%, rgba(222,18,236,1) 100%);
+		background: linear-gradient(90deg, rgba(222,18,236,1) 0%, rgba(253,29,29,1) 25%, rgba(252,125,55,1) 50%, rgba(253,29,29,1) 75%, rgba(222,18,236,1) 100%);
+		/*background-color: var(--bright-orange);*/
 		padding: 0.5rem 5rem;
 		border-radius: 10rem;
 		margin: 2rem 0 0;
+		background-size: 400% 400%;
+		 animation: gradient 10s ease infinite;
 	}
 	a:hover {
-		/* background-color: #2563eb; */
+		 /*background-color: #2563eb;*/
 		/* bright orange is #f65900  make it a little darker then that to show that it is hovered */
-		background-color: #ce4800;
+		/*background: #ce4800;*/
+		/*background: -webkit-linear-gradient(0deg, #cc2b5e, #ab26d7);*/
+		text-decoration: underline;
+		text-decoration-thickness: 0.1rem;
 	}
 	@media (max-width: 600px) {
 		h1 {
@@ -127,4 +140,17 @@
 			padding: 0.5rem 5rem;
 		}
 	}
+/*	animate the background */
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+
 </style>
