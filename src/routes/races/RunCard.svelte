@@ -35,9 +35,9 @@
 		background-color: var(--off-white);
 		padding: 1.5rem;
 		/* border: 1px solid var(--bright-orange); */
-		border: 2px solid var(--dark);
+		border: 2px solid var(--dark-blue);
 		border-radius: 0.5rem;
-		box-shadow: 0 0 0.25rem 0.25rem var(--dark);
+		box-shadow: 0 0 0.25rem 0.25rem var(--dark-blue);
 		/* box-shadow: 0 0 0.25rem 0.25rem var(--bright-orange); */
 	}
 	a {
@@ -47,7 +47,7 @@
 	}
 	.details {
 		--slant-amount: 2.5rem;
-		background-color: var(--dark);
+		background-color: var(--dark-blue);
 		/* background-color: var(--bright-orange); */
 		padding: 1rem var(--slant-amount);
 		display: flex;

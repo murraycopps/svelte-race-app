@@ -33,8 +33,8 @@
 
 <style>
 	section {
-		--dark: #1c3a64;
-		/*--dark: #2b4b78;*/
+		--dark-blue: #1c3a64;
+		/*--dark-blue: #2b4b78;*/
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
