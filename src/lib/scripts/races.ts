@@ -91,7 +91,7 @@ const races: Race[] = [
         distance: 'Indoor Track',
         distances: ['60m', '200m', '400m', '600m', '800m', '1000m', '1500m', 'Mile', '3000m', '2k SC', '4x400m', '4x800m', 'High Jump', 'Long Jump', 'Triple Jump', 'Shot Put', 'Pole Vault'],
         date: 'February 12, 2023',
-        location: 'Boston, MA (The Track at New Balance)',
+        location: 'Boston, MA',
         description: 'The New England Indoor Classic is a premier indoor track and field meet held at The Track at New Balance in Boston. The meet is open to all athletes in New England and features a wide range of events for sprinters, middle-distance runners, distance runners, and field athletes. The state-of-the-art facility and experienced officials provide a top-notch experience for competitors, while the supportive and energetic atmosphere make the meet a must-attend event for athletes and spectators alike.',
         distanceAway: 51
     }

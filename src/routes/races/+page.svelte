@@ -9,6 +9,9 @@
 
 	const setState = (value: boolean) => {
 		state = value;
+	};
+
+	const sortDistances = () => {
 		// sort selected races
 		if (state) {
 			// sort by date from soonest to latest
@@ -23,7 +26,7 @@
 		}
 	};
 
-	setState(false);
+	sortDistances();
 
 	const changeDistance = (e: { currentTarget: HTMLSelectElement }) => {
 		// set selected races to races.filter
@@ -31,21 +34,18 @@
 
 		if (e.currentTarget.value === 'all') {
 			selectedRaces = races;
-			return;
-		}
-
-		if (e.currentTarget.value === 'marathon') {
+		} else if (e.currentTarget.value === 'marathon') {
 			selectedRaces = races.filter(
 				(race) =>
 					race.distance.toLowerCase().includes('marathon') &&
 					!race.distance.toLowerCase().includes('half')
 			);
-			return;
+		} else {
+			selectedRaces = races.filter((race) =>
+				race.distance.toLowerCase().includes(e.currentTarget.value)
+			);
 		}
-
-		selectedRaces = races.filter((race) =>
-			race.distance.toLowerCase().includes(e.currentTarget.value)
-		);
+		sortDistances();
 	};
 </script>
 
