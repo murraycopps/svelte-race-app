@@ -17,3 +17,5 @@ export const load = ({ params }: any) => {
     }
 
 };
+
+export const prerender = true;
