@@ -13,7 +13,7 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Find and " />
+	<meta name="description" content="Find nearby races" />
 </svelte:head>
 
 <section>
